@@ -1,0 +1,29 @@
+# GET All Todo
+GET http://localhost:5000/todos
+
+# Todo By Id
+###
+GET http://localhost:5000/todos/3
+
+# Create Todo
+###
+POST http://localhost:5000/todos
+Content-Type: application/json
+
+{ 
+    "id":7,
+    "todo":"Belajar Jav"
+}
+
+# Update Todo
+###
+PATCH http://localhost:5000/todos/7
+Content-Type: application/json
+
+{
+    "todo":"Belajar Java"
+}
+
+# Delete Todo
+###
+DELETE http://localhost:5000/todos/7
